@@ -1,0 +1,95 @@
+import "./App.css";
+import brandlogo from "./assets/Dr.-K-Koh-Aesthetics_black_high-res.png";
+
+const MainPage = () => {
+  const redirectToLink = () => {
+    window.open("https://kohaesthetics.janeapp.com", "_blank");
+  };
+
+  return (
+    <>
+      <div
+        id="logo"
+        className="logo"
+        style={{
+          backgroundColor: "#F9F6EE",
+          width: "100%",
+          height: "150px",
+          marginTop: "0",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <img
+          src={brandlogo}
+          className="react-logo"
+          alt="logo"
+          style={{
+            maxWidth: "40%",
+            width: "700px",
+            height: "400px",
+            objectFit: "contain",
+          }}
+        />
+      </div>
+
+      <div
+        className="appbutton"
+        id="welcome"
+        style={{
+          alignItems: "center",
+          paddingTop: "50px",
+          textAlign: "center",
+          width: "450px",
+          height: "300px",
+          justifyContent: "center",
+          marginLeft: "auto", // Center the div horizontally
+          marginRight: "auto", // Center the div horizontally
+          marginTop: "50px",
+          borderRadius: "10px",
+          border: "2px solid #050511",
+        }}
+      >
+        <h1 style={{ fontSize: 20, color: "#000000" }}>
+          Welcome to Koh Aesthetics! <br />
+        </h1>
+        <p id="desc" style={{ fontSize: 15, color: "#000000" }}>
+          Welcome to Dr. Koh Aesthetics! We're here to enhance your natural
+          beauty with personalized care. Dr. Koh is dedicated to providing
+          individualized aesthetic solutions that highlight your unique
+          features. Interested in a personalized consultation? Book an
+          appointment today!
+        </p>
+        <button
+          id="booking-button"
+          onClick={redirectToLink}
+          style={{
+            backgroundColor: "#FAF9F6",
+            color: "#000000",
+            fontWeight: "500",
+            width: "300px",
+          }}
+        >
+          Book an Appointment
+        </button>
+      </div>
+    </>
+  );
+};
+
+export default MainPage;
+
+
+
+
+  <img
+        src={brandlogo}
+        className="brand-logo"
+        alt="logo"
+        style={{
+          maxWidth: "100%",
+          height: "auto",
+          marginBottom: "20px",
+        }}
+      />
